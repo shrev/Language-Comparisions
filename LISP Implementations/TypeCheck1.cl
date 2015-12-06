@@ -1,0 +1,6 @@
+(defun list-add (l)
+    	  (let ((sum 0))
+    	    (declare (fixnum sum))
+    	    (dolist (i l sum)
+      	      (declare (fixnum i))
+      	      (setq sum (+ i sum)))))

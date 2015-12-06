@@ -1,0 +1,18 @@
+( defunc scope(x)
+  (if ( < 3 x )
+      (progn 
+        (setq x 5)
+        (printf "scope in first outer if")
+        (print x)
+        if ( > 10 x )
+        (progn
+          (setq x 200)
+          (print x)
+          (print "scope in second if")
+          )
+      )
+    )
+  (setq x 800)
+  (print x)
+  (print "in end of function")
+)
